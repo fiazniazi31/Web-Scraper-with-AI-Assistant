@@ -15,12 +15,12 @@ from langchain_community.agent_toolkits.sql.toolkit import SQLDatabaseToolkit
 from langchain_groq import ChatGroq
 
 # Database connection string
-conn_str = (
-    "Driver={ODBC Driver 17 for SQL Server};"
-    "Server=DESKTOP-H6ASD41\\SQLEXPRESS;"
-    "Database=WebScraping;"
-    "Trusted_Connection=yes;"
-)
+from dotenv import load_dotenv
+load_dotenv()
+
+import os
+conn_str = os.getenv("SQL_CONN_STR")
+
 
 def create_database_table():
     """Create the scraped_data table if it doesn't exist"""

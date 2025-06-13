@@ -14,7 +14,7 @@ WebScraper/
 
 # OS files
 .DS_Store
-studnet.db
+student.db
 
 # Logs
 *.log
