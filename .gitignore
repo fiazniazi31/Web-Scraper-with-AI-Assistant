@@ -29,3 +29,5 @@ langchain_agent.py
 sqlite3.ipynb
 test.py
 web_crawler.py
+
+.gitignore
