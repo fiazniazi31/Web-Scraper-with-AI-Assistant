@@ -1,0 +1,31 @@
+# Ignore .env file
+.env
+
+# Byte-compiled / cache files
+__pycache__/
+*.py[cod]
+*.so
+
+
+# Virtual environments
+venv/
+env/
+WebScraper/
+
+# OS files
+.DS_Store
+studnet.db
+
+# Logs
+*.log
+
+# Ignore specific files/folders
+secret_config.json
+data/temp/
+WebScraper/
+
+app.py
+langchain_agent.py
+sqlite3.ipynb
+test.py
+web_crawler.py
